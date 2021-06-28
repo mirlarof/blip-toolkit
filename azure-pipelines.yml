@@ -27,6 +27,6 @@ extends:
     to: semantic-release
     npmCmds:
     - npm i -g npm@^6.0.0
-    - npm prune && npm install -g codecov
-    - codecov
+    - npm prune
+    - npm run test
     - npm run build
